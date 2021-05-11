@@ -3,32 +3,49 @@ using System.Collections.Generic;
 
 namespace ProgrammingExercises
 {
+
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //var numbers = new[] { 1, 7, 3, 4 };
+            //Exercise5.GetProductOfAllIntsExceptAtIndex(numbers);
 
-            var numbers = new[] {1,7,3,4};
-
-            var sums = new List<int>();
-
-            foreach (var num in numbers)
+            var words = new string[]
             {
-                var sum = 1;
-                for (var i=0; i < numbers.Length; i++)
-                {
-                    sum = num != numbers[i] ? sum *= numbers[i] : sum *= 1; 
-                }
+            "ptolemaic",
+            "retrograde",
+            "supplant",
+            "undulate",
+            "xenoepist",
+            "asymptote", 
+            "babka",
+            "banoffee",
+            "engender",
+            "karpatka",
+            "othellolagkage",
+            };
 
-                sums.Add(sum);
+           var index =  Exercise4.GetIndexOfStartingPoint(words);
+                Console.WriteLine("You started at word with index" + index);
 
-            }
-
-
-            foreach (var num in sums)
-                Console.WriteLine(num);
 
         }
     }
+
+    public class Exercise4
+    { 
+        public static int GetIndexOfStartingPoint(string[] words)
+        {
+            var unsortedWords = new List<string>();
+
+            foreach (var word in words)
+                unsortedWords.Add(word);
+
+            Array.Sort(words);
+            return unsortedWords.IndexOf(words[0]);
+        }
+    }
+
 }
