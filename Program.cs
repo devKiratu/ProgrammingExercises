@@ -26,8 +26,15 @@ namespace ProgrammingExercises
             "othellolagkage",
             };
 
-           var index =  Exercise4.GetIndexOfStartingPoint(words);
-                Console.WriteLine("You started at word with index" + index);
+            //var index =  Exercise4.GetIndexOfStartingPoint(words);
+            //   Console.WriteLine("You started at word with index" + index);
+
+
+            var braces = "{[]()}";
+            var braces1 = "{[(])}";
+
+            Console.WriteLine(braces + "\t" + Exercise3.IsProperlyNested(braces));
+            Console.WriteLine(braces1 + "\t" + Exercise3.IsProperlyNested(braces1));
 
 
         }
