@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace ProgrammingExercises
 {
@@ -31,20 +30,6 @@ namespace ProgrammingExercises
                 Console.WriteLine("You started at word with index" + index);
 
 
-        }
-    }
-
-    public class Exercise4
-    { 
-        public static int GetIndexOfStartingPoint(string[] words)
-        {
-            var unsortedWords = new List<string>();
-
-            foreach (var word in words)
-                unsortedWords.Add(word);
-
-            Array.Sort(words);
-            return unsortedWords.IndexOf(words[0]);
         }
     }
 
