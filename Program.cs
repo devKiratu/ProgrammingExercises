@@ -32,8 +32,8 @@ namespace ProgrammingExercises
             //   Console.WriteLine("You started at word with index" + index);
 
             //Q3
-            var braces = "{[]()}";
-            var braces1 = "{[(])}";
+           // var braces = "{[]()}";
+            //var braces1 = "{[(])}";
 
             // Console.WriteLine(braces + "\t" + Exercise3.IsProperlyNested(braces));
             //Console.WriteLine(braces1 + "\t" + Exercise3.IsProperlyNested(braces1));
