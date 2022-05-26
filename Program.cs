@@ -28,8 +28,8 @@ namespace ProgrammingExercises
             "othellolagkage",
             };
 
-            //var index =  Exercise4.GetIndexOfStartingPoint(words);
-            //   Console.WriteLine("You started at word with index" + index);
+            var index = Exercise4.GetIndexOfStartingPoint(words);
+            Console.WriteLine($"You started at word {words[index]} which is at position {index}");
 
             ////Q3
             //var braces = "{[]()}";
@@ -39,9 +39,9 @@ namespace ProgrammingExercises
             //Console.WriteLine(braces1 + "\t" + Exercise3.IsProperlyNested(braces1));
 
             ////Q1
-            var flightLength = 90;
-            var movieLengths = new int[/*40000*/] { 41, 42, 43, 44, 45, 40, 52, 53 };
-            Console.WriteLine(Exercise1.AreThereTwoMovies(flightLength, movieLengths));
+            //var flightLength = 90;
+            //var movieLengths = new int[/*40000*/] { 41, 42, 43, 44, 45, 40, 52, 53 };
+            //Console.WriteLine(Exercise1.AreThereTwoMovies(flightLength, movieLengths));
 
 
         }
